@@ -18,4 +18,4 @@ use App\Http\Controllers\HookController;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-Route::post('/hook', [HookController::class, ('index')]);
+Route::get('/hook', [HookController::class, ('index')]);
